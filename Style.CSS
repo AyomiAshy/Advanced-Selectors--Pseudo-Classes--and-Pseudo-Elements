@@ -1,0 +1,46 @@
+body{
+    background-color: red;
+    color: orange;
+}
+h1{
+    color: yellow;
+    text-decoration: overline underline;
+}
+/*Advanced selectors-attribute,child,sibling*/
+a{
+    color: green;
+    text-decoration: none;
+}
+a:hover{
+color: blue;
+font-size: 20px;
+}
+ul >li{
+    font-weight: bolder;
+    color: indigo;
+}
+/*Pseudo classes*/
+ul li:hover{
+     color: violet;
+     background-color: aqua;
+     border-radius: 8px;
+}
+/*nth child-styles a specific item in a list */
+ul li:nth-child(4){
+     color: cyan;
+}
+/*not-styles everything expect the thing you have chosen*/
+p:not(:first-of-type){
+    text-decoration: underline;
+}
+/*Pseudo elements-modify html element, add content before and after the element,Modify a part of the elements(increase the size of the 1st Letter in aparagraph)*/
+ul li::before{
+    content: "✔";
+}
+a::after{
+    content: "*";
+}
+p::first-letter{
+    font-size: 200%;
+    color: pink;
+}
